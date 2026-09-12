@@ -29,11 +29,12 @@ defmodule GeoIP.Mixfile do
 
   defp deps do
     [
-      {:httpoison, "~> 2.1"},
+      {:httpoison, "~> 2.1 or ~> 3.0"},
       {:jason, "~> 1.1"},
       {:cachex, "~> 3.3"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:mock, "~> 0.3.3", only: :test},
+      {:meck, "~> 1.2", only: :test, override: true},
       {:excoveralls, "~> 0.15", only: :test}
     ]
   end
