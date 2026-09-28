@@ -31,7 +31,7 @@ defmodule GeoIP.Mixfile do
     [
       {:httpoison, "~> 2.1 or ~> 3.0"},
       {:jason, "~> 1.1"},
-      {:cachex, "~> 3.3"},
+      {:cachex, "~> 3.3 or ~> 4.0"},
       {:ex_doc, ">= 0.0.0", only: :dev, runtime: false},
       {:mock, "~> 0.3.3", only: :test},
       {:meck, "~> 1.2", only: :test, override: true},
